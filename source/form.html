@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="page">
+  <meta charset="UTF-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body class="page__body">
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__logo" href="#">
+        <img src="https://via.placeholder.com/350" alt="Функциональное питание для котов">
+      </a>
+      <a class="header__brand" href="#">
+        <span>Cat</span> energy
+      </a>
+      <div class="header__nav nav">
+        <button class="nav__toggle" type="button">Открыть меню</button>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a href="#">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="send send__wrapper">
+      <h1 class="send__title">Подбор программы</h1>
+      <h3 class="send__subtitle">Заполните анкету, и мы подберем <br>программу питания для вашего кота</h3>
+      <form action="https://echo.htmlacademy.ru" method="post" class="send__form cat-form">
+        <fieldset class="cat-form__common-set">
+          <p><label for="cat-name">Имя:<em>*</em></label><input id="cat-name" name="cat-name" class="input cat-form__name-input" type="text" placeholder="Барсик" required></p>
+          <p><label for="cat-weight">Вес (кг):<em>*</em></label><input id="cat-weight" name="cat-weight" class="input cat-form__weight-input" type="number" placeholder="7" required></p>
+          <p><label for="cat-age">Возраст (лет):</label><input id="cat-age" name="cat-age" class="input cat-form__age-input" type="number" placeholder="7"></p>
+        </fieldset>
+        <fieldset class="cat-form__action-set">
+          <p><label for="cat-slim">Похудение</label><input id="cat-slim" name="cat-action" class="radio cat-form__slim-radio" type="radio" value="slim"></p>
+          <p><label for="cat-fit">Набор массы</label><input id="cat-fit" name="cat-action" class="radio cat-form__fit-radio" type="radio" value="fit"></p>
+          <p><label for="cat-advice">Не знаю (нужен ваш совет)</label><input id="cat-advice" name="cat-action" class="radio cat-form__advice-radio" type="radio" value="advice"></p>
+        </fieldset>
+        <fieldset class="cat-form__contacts-set">
+          <legend class="cat-form__legend">Контактные данные (владельца кота)</legend>
+          <p><label for="cat-email">Email:<em>*</em></label><input id="cat-email" name="cat-email" class="input cat-form__email-input" type="email" placeholder="kuklachev@gmail.com" required></p>
+          <p><label for="cat-phone">Телефон:<em>*</em></label><input id="cat-phone" name="cat-phone" class="input cat-form__phone-input" type="tel" placeholder="8 (960) 900-60-90" required></p>
+        </fieldset>
+        <fieldset class="cat-form__comment-set">
+          <legend class="cat-form__legend">Комментарий</legend>
+          <p><label for="cat-comment">Расскажите обо всех повадках кота</label><textarea id="cat-comment" name="cat-comment" class="textarea cat-form__comment-textarea" placeholder="Расскажите обо всех повадках кота"></textarea></p>
+        </fieldset>
+        <fieldset class="cat-form__additional-set">
+          <legend class="cat-form__legend">Дополнительно</legend>
+          <p><label for="cat-checkbox-sugar">Сахарозаменитель</label><input id="cat-checkbox-sugar" name="cat-checkbox" class="checkbox cat-form__checkbox-item" type="checkbox" value="sugar"></p>
+          <p><label for="cat-checkbox-water">Питьевая вода</label><input id="cat-checkbox-water" name="cat-checkbox" class="checkbox cat-form__checkbox-item" type="checkbox" value="water"></p>
+          <p><label for="cat-checkbox-milk">Молоко</label><input id="cat-checkbox-milk" name="cat-checkbox" class="checkbox cat-form__checkbox-item" type="checkbox" value="milk"></p>
+          <p><label for="cat-checkbox-vitamin">Витамины</label><input id="cat-checkbox-vitamin" name="cat-checkbox" class="checkbox cat-form__checkbox-item" type="checkbox" value="vitamin"></p>
+        </fieldset>
+        <button type="submit" class="button cat-form__submit">Отправить заявку</button>
+        <p class="cat-form__legend">
+          <small>
+            * — Обязательные поля
+          </small>
+        </p>
+      </form>
+    </section>
+    <section class="cooperate cooperate__wrapper">
+      <h2 class="cooperate__text">
+        приглашаем<br>к сотрудничеству<br>дилеров!
+      </h2>
+      <address class="cooperate__address">
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </address>
+    </section>
+
+    <section class="map">
+      <h2 class="visually-hidden">Адрес на карте</h2>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="footer__brand">
+      <span>Cat</span> energy
+    </a>
+    <div class="footer__social">
+      <ul class="footer__social-list">
+        <li class="footer__social-item footer__social-item--vk">VK</li>
+        <li class="footer__social-item footer__social-item--instagram">instagram</li>
+        <li class="footer__social-item footer__social-item--facebook">FB</li>
+      </ul>
+    </div>
+    <a href="#" class="footer__academy">
+      HTML Academy
+    </a>
+  </footer>
+</body>
+</html>
