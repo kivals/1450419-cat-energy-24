@@ -1,1 +1,36 @@
+@import "common/mixins";
+@import "common/fonts";
+@import "common/variables";
+// UI blocks
+@import "ui/button";
+@import "ui/input";
+@import "ui/textarea";
+@import "ui/section-title";
+@import "ui/visually-hidden";
+// Layout blocks
+@import "layout/page";
+@import "layout/page-body";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/main";
+@import "layout/footer";
+// blocks
+@import "intro";
+@import "benefit";
+@import "cooperate";
+@import "example";
+@import "map";
+@import "services";
+@import "howto";
+// catalog page
+@import "catalog";
+@import "catalog-item";
+@import "extra";
+@import "extra-item";
+//form page
+@import "send";
+@import "cat-form";
+
+
+
 // Начните писать стили здесь
