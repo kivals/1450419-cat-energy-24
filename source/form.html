@@ -3,8 +3,9 @@
 <head class="page">
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
+<body class="page-body">
   <header class="header">
       <a class="header__logo" href="#">
         <img src="https://via.placeholder.com/350" alt="Функциональное питание для котов">
@@ -12,7 +13,7 @@
       <a class="header__brand" href="#">
         <span>Cat</span> energy
       </a>
-      <div class="nav">
+      <nav class="nav">
         <button class="nav__toggle" type="button">Открыть меню</button>
         <ul class="nav__list">
           <li class="nav__item nav__item--active">
@@ -25,7 +26,7 @@
             <a href="#">Подбор программы</a>
           </li>
         </ul>
-      </div>
+      </nav>
   </header>
   <main class="main">
     <section class="send">
@@ -59,7 +60,7 @@
           <p><label for="cat-checkbox-vitamin">Витамины</label><input id="cat-checkbox-vitamin" name="cat-checkbox" class="checkbox" type="checkbox" value="vitamin"></p>
         </fieldset>
         <button type="submit" class="button">Отправить заявку</button>
-        <p class="cat-form__legend">
+        <p class="cat-form__small">
           <small>
             * — Обязательные поля
           </small>

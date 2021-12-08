@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+@import "common/variables";
+@import "common/mixins";
+@import "common/fonts";
+// UI blocks
+@import "ui/section-title";
+// Layout blocks
+@import "layout/page-body";
+@import "layout/nav";
+@import "layout/footer";
+@import "intro";
+@import "benefit";
+@import "cooperate";
+@import "example";
+@import "services";
+@import "howto";
+@import "catalog";
+@import "extra";
+@import "send";
+@import "cat-form";
