@@ -1,0 +1,22 @@
+.button {
+  background-color: $basicGreen;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.input {
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $specialDarkGrey;
+}
+
+.textarea {
+  border: 1px solid #e7e7e7;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $specialDarkGrey;
+}
