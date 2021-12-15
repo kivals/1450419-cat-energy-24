@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
+.header__nav {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

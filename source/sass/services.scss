@@ -1,5 +1,18 @@
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .services__item {
   background-color: #d9d9d9;
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
 }
 
 .services__title {

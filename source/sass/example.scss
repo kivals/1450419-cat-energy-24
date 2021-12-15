@@ -1,5 +1,17 @@
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.example__content {
+  flex: 0 1 50%;
+}
+
+.example__animation {
+  flex: 0 1 50%;
 }
 
 .example__text {
