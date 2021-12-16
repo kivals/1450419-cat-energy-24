@@ -6,6 +6,23 @@
   }
 }
 
+.cat-form__common {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.cat-form__contacts-set {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.cat-form__additional-set {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
 .cat-form__legend {
   font-size: 24px;
   line-height: 26px;

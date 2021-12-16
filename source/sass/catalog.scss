@@ -2,6 +2,12 @@
   font-size: 36px;
 }
 
+.catalog__list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+}
+
 .catalog__item {
   background-color: $basic-grey;
 }
