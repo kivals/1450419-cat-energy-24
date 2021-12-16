@@ -18,13 +18,13 @@
     <button class="nav__toggle" type="button">Открыть меню</button>
     <ul class="nav__list">
       <li class="nav__item nav__item--active">
-        <a href="#">Главная</a>
+        <a href="/">Главная</a>
       </li>
       <li class="nav__item">
-        <a href="#">Каталог продукции</a>
+        <a href="/catalog.html">Каталог продукции</a>
       </li>
       <li class="nav__item">
-        <a href="#">Подбор программы</a>
+        <a href="/form.html">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -35,6 +35,7 @@
       <h3 class="send__subtitle">Заполните анкету, и мы подберем <br>программу питания для вашего кота</h3>
       <form action="https://echo.htmlacademy.ru" method="post" class="cat-form">
         <section class="cat-form__common">
+          <h3 class="visually-hidden">Основные данные по коту</h3>
           <fieldset class="cat-form__common-set">
             <p><label for="cat-name">Имя:<em>*</em></label><input id="cat-name" name="cat-name" class="input" type="text" placeholder="Барсик" required></p>
             <p><label for="cat-weight">Вес (кг):<em>*</em></label><input id="cat-weight" name="cat-weight" class="input" type="number" placeholder="7" required></p>
@@ -46,7 +47,6 @@
             <p><label for="cat-advice">Не знаю (нужен ваш совет)</label><input id="cat-advice" name="cat-action" class="radio" type="radio" value="advice"></p>
           </fieldset>
         </section>
-
         <fieldset class="cat-form__contacts-set">
           <legend class="cat-form__legend">Контактные данные (владельца кота)</legend>
           <p><label for="cat-email">Email:<em>*</em></label><input id="cat-email" name="cat-email" class="input" type="email" placeholder="kuklachev@gmail.com" required></p>
