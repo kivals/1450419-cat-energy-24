@@ -121,14 +121,14 @@
   @media (min-width: $tablet-width) {
     position: relative;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       bottom: -8px;
       left: 0;
       height: 2px;
       width: 100%;
-      background-color: #68B738;
+      background-color: #68b738;
     }
   }
 }
