@@ -30,6 +30,15 @@ textarea {
   font-family: $fontFamily;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .button {
   background-color: $basic-green;
   color: #ffffff;
