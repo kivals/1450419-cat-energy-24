@@ -1,9 +1,28 @@
 .send__title {
+  display: block;
+  padding: 27px 15px 0 15px;
+  margin-bottom: 37px;
+  border-top: 1px solid #d9d9d9;
   font-size: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 54px;
+    border: none;
+    padding-top: 60px;
+  }
 }
 
 .send__subtitle {
+  padding: 0 15px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }

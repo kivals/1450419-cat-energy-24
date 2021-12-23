@@ -7,24 +7,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
-  <header class="header container">
-  <a class="header__logo" href="#">
-    <img src="./img/logo.png" alt="Функциональное питание для котов">
-  </a>
-  <a class="header__brand" href="#">
-    <span>Cat</span> energy
-  </a>
-  <nav class="header__nav nav">
-    <button class="nav__toggle" type="button">Открыть меню</button>
-    <ul class="nav__list">
-      <li class="nav__item nav__item--active">
-        <a href="/">Главная</a>
+  <header class="header container header--nojs">
+  <div class="header__wrapper">
+    <a class="header__logo" href="/">
+      <img src="./img/logo-mobile.png" alt="Функциональное питание для котов">
+    </a>
+    <a class="header__brand" href="#">
+      <span>Cat</span> energy
+    </a>
+    <div class="header__toggle">
+      <span class="header__toggle-line"></span>
+      <span class="header__toggle-line"></span>
+      <span class="header__toggle-line"></span>
+    </div>
+  </div>
+
+  <nav class="header__nav">
+    <ul class="header__nav-list">
+      <li class="header__nav-item header__nav-item--active">
+        <a class="header__nav-link" href="/">Главная</a>
       </li>
-      <li class="nav__item">
-        <a href="/catalog.html">Каталог продукции</a>
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="/catalog.html">Каталог продукции</a>
       </li>
-      <li class="nav__item">
-        <a href="/form.html">Подбор программы</a>
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="/form.html">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -37,14 +44,32 @@
         <section class="cat-form__common">
           <h3 class="visually-hidden">Основные данные по коту</h3>
           <fieldset class="cat-form__common-set">
-            <p><label for="cat-name">Имя:<em>*</em></label><input id="cat-name" name="cat-name" class="input" type="text" placeholder="Барсик" required></p>
-            <p><label for="cat-weight">Вес (кг):<em>*</em></label><input id="cat-weight" name="cat-weight" class="input" type="number" placeholder="7" required></p>
-            <p><label for="cat-age">Возраст (лет):</label><input id="cat-age" name="cat-age" class="input" type="number" placeholder="7"></p>
+            <p class="cat-form__common-set-item">
+              <label for="cat-name">Имя:<em>*</em></label>
+              <input class="cat-form__common-set-input input" id="cat-name" name="cat-name" type="text" placeholder="Барсик" required>
+            </p>
+            <p class="cat-form__common-set-item">
+              <label for="cat-weight">Вес (кг):<em>*</em></label>
+              <input class="cat-form__common-set-input input" id="cat-weight" name="cat-weight" type="number" placeholder="7" required>
+            </p>
+            <p class="cat-form__common-set-item">
+              <label for="cat-age">Возраст (лет):</label>
+              <input class="cat-form__common-set-input input" id="cat-age" name="cat-age" type="number" placeholder="7">
+            </p>
           </fieldset>
           <fieldset class="cat-form__action-set">
-            <p><label for="cat-slim">Похудение</label><input id="cat-slim" name="cat-action" class="radio" type="radio" value="slim"></p>
-            <p><label for="cat-fit">Набор массы</label><input id="cat-fit" name="cat-action" class="radio" type="radio" value="fit"></p>
-            <p><label for="cat-advice">Не знаю (нужен ваш совет)</label><input id="cat-advice" name="cat-action" class="radio" type="radio" value="advice"></p>
+            <p class="cat-form__action-set-item">
+              <label class="cat-form__action-set-label" for="cat-slim">Похудение</label>
+              <input class="cat-form__action-set-radio radio" id="cat-slim" name="cat-action" type="radio" value="slim">
+            </p>
+            <p class="cat-form__action-set-item">
+              <label class="cat-form__action-set-label" for="cat-fit">Набор массы</label>
+              <input class="cat-form__action-set-radio radio" id="cat-fit" name="cat-action" type="radio" value="fit">
+            </p>
+            <p class="cat-form__action-set-item">
+              <label class="cat-form__action-set-label" for="cat-advice">Не знаю (нужен ваш совет)</label>
+              <input class="cat-form__action-set-radio radio" id="cat-advice" name="cat-action" type="radio" value="advice">
+            </p>
           </fieldset>
         </section>
         <fieldset class="cat-form__contacts-set">
@@ -100,5 +125,6 @@
       HTML Academy
     </a>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>
