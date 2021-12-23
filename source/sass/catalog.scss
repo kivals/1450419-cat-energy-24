@@ -53,7 +53,7 @@
   padding: 14px 0 12px;
 
   @media (min-width: $tablet-width) {
-    img {
+    .catalog__item-img {
       width: 168px;
       margin-top: -50%;
     }
@@ -91,22 +91,22 @@
     margin-bottom: 2px;
   }
 
-  span {
-    font-family: "Arial", serif;
-    font-size: 12px;
-    line-height: 16px;
-    color: $special-dark-grey;
-  }
-
   @media (min-width: $tablet-width) {
     padding-top: 5px;
     padding-bottom: 9px;
     border-bottom: 1px solid #cdcdcd;
 
-    span {
+    .catalog__item-property-item {
       font-size: 16px;
     }
   }
+}
+
+.catalog__item-property-item {
+  font-family: "Arial", serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
 }
 
 .catalog__item-more-title {
