@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
   <header class="header container header--nojs">
       <div class="header__wrapper">
         <a class="header__logo" href="/">
-          <img src="./img/logo-mobile.png" alt="Функциональное питание для котов">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img src="./img/logo/logo-mobile.svg" alt="Функциональное питание для котов">
+          </picture>
         </a>
-        <a class="header__brand" href="#">
-          <span>Cat</span> energy
+        <a class="header__logo header__logo--additional" href="/">
+          <img src="./img/logo/logo2-mobile.svg" width="101px" height="18" alt="Функциональное питание для котов">
         </a>
         <div class="header__toggle">
           <span class="header__toggle-line"></span>
