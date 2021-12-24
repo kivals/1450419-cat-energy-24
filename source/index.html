@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
   <header class="header container header--nojs">
       <div class="header__wrapper">
         <a class="header__logo" href="/">
-          <img src="./img/logo-mobile.png" alt="Функциональное питание для котов">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img src="./img/logo/logo-mobile.svg" alt="Функциональное питание для котов">
+          </picture>
         </a>
-        <a class="header__brand" href="#">
-          <span>Cat</span> energy
+        <a class="header__logo header__logo--additional" href="/">
+          <img src="./img/logo/logo2-mobile.svg" width="101px" height="18" alt="Функциональное питание для котов">
         </a>
         <div class="header__toggle">
           <span class="header__toggle-line"></span>
@@ -40,7 +47,12 @@
     <section class="intro container">
       <h1 class="intro__title">Функциональное питание для котов</h1>
       <h2 class="intro__sub-title">Занялся собой? Займись котом!</h2>
-      <img class="intro__image" src="./img/into.png" alt="Cat energy">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./img/intro/can-desktop.png 1x, ./img/intro/can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="./img/intro/can-tablet.png 1x, ./img/intro/can-tablet@2x.png 2x">
+        <img class="intro__image" src="./img/intro/can-mobile.png" width="280" height="270" srcset="./img/intro/can-mobile@2x.png" alt="Cat energy">
+      </picture>
+
       <button type="button" class="button intro__button">Подобрать программу</button>
     </section>
 

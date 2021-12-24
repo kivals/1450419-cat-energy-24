@@ -16,6 +16,7 @@
   height: 65px;
 
   @media (min-width: $tablet-width) {
+    height: auto;
     flex-grow: 1;
     flex-shrink: 0;
     justify-content: flex-start;
@@ -30,28 +31,11 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-.header__brand {
-  color: #111111;
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-left: 15px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  span {
-    font-weight: 800;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 7px;
+  &--additional {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
