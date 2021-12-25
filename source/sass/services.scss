@@ -6,6 +6,22 @@
 .services__item {
   background-color: #d9d9d9;
 
+  &--slim .services__title {
+    &::before {
+      width: 50px;
+      height: 53px;
+      background-image: url("../img/services/cat_slim.svg");
+    }
+  }
+
+  &--pro .services__title {
+    &::before {
+      width: 67px;
+      height: 50px;
+      background-image: url("../img/services/cat_strong.svg");
+    }
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 570px;
 
@@ -13,11 +29,56 @@
       margin-right: 80px;
     }
   }
+
+  // Только на планшетной версии
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &--slim,
+    &--pro {
+      display: flex;
+
+      &::after {
+        content: "";
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 1 0 auto;
+      }
+    }
+
+    &--slim {
+      &::after {
+        height: 211px;
+        width: 200px;
+        background-image: url("../img/services/cat_slim.svg");
+      }
+    }
+
+    &--pro {
+      &::after {
+        height: 200px;
+        width: 268px;
+        background-image: url("../img/services/cat_strong.svg");
+      }
+    }
+  }
 }
 
 .services__title {
+  display: flex;
   font-size: 36px;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+  }
+
+  // Только на планшетной версии
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .services__text {
