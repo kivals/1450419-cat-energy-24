@@ -10,6 +10,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
+import htmlmin from 'gulp-htmlmin';
 
 
 const SOURCE_DIR = 'source';
@@ -52,6 +53,7 @@ const styles = () => {
 // HTML
 const html = () => {
   return gulp.src(PATH.source.html)
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(BUILD_DIR));
 }
 
