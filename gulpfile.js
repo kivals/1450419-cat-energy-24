@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import htmlmin from 'gulp-htmlmin';
+import minify from 'gulp-minify';
 
 
 const SOURCE_DIR = 'source';
@@ -60,6 +61,11 @@ const html = () => {
 // Scripts
 const scripts = () => {
   return gulp.src(PATH.source.js)
+    .pipe(minify({
+      ext:{
+        min:'.min.js'
+      }
+    }))
     .pipe(gulp.dest(PATH.build.js))
     .pipe(browser.stream());
 }
