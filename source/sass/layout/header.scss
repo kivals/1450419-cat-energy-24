@@ -21,6 +21,7 @@
     flex-shrink: 0;
     justify-content: flex-start;
     margin-right: 20px;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,6 +71,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    background-color: transparent;
   }
 }
 
@@ -80,6 +82,7 @@
   text-align: center;
   padding: 22px 10px;
   border-top: 1px solid #e6e6e6;
+  color: #000000;
 
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
@@ -106,7 +109,7 @@
 }
 
 .header__nav-link {
-  color: #000000;
+  color: inherit;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
