@@ -1,74 +1,151 @@
 .intro {
-  height: 302px;
-  background-image:
-    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/intro/intro-background-mobile.jpg");
-  background-position: top;
-  background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -163px;
+    background-image: url("../img/intro/intro-back-desktop.jpg");
+    background-size: 50%;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+  //height: 480px;
+  //
+  //
+  //
+  //@media (min-width: $tablet-width) {
+  //  background-image: none;
+  //}
+  //
+  //@media (min-width: $desktop-width) {
+  //  height: 696px;
+  //  align-items: flex-start;
+  //
+  //  background-image:
+  //    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+  //    url("../img/intro/intro-background-desktop.jpg");
+  //  background-position: top right;
+  //  background-repeat: no-repeat;
+  //  background-size: 50%;
+  //
+  //  @media (min-resolution: 2dppx) {
+  //    background-image:
+  //      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+  //      url("../img/intro/intro-background-desktop@2x.jpg");
+  //  }
+  //}
+}
+
+.intro__wrapper-content {
+  background-image: url("../img/intro/intro-back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: center;
+  padding: 27px 20px 0 20px;
+  margin-bottom: 2%;
 
-  @media (min-resolution: 2dppx) {
-    background-image:
-      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/intro/intro-background-mobile@2x.jpg");
+
+  @media (min-width: $mobile-width-only) and (min-resolution: 2dppx) {
+    background-image: url("../img/intro/intro-back-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     background-image: none;
+    padding-top: 40px;
+    max-width: $max-width-container;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    height: 696px;
-    align-items: flex-start;
+    padding-top: 223px;
+    padding-bottom: 270px;
+    background-image: none;
+    margin: 0 auto 32px auto;
+  }
 
-    background-image:
-      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/intro/intro-background-desktop.jpg");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 50%;
+}
 
-    @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("../img/intro/intro-background-desktop@2x.jpg");
-    }
+.intro__wrapper-button {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 271px;
+    left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 171px;
+    top: 456px;
   }
 }
 
 .intro__title {
   font-size: 36px;
   color: #ffffff;
-  margin-bottom: 25px;
   text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 41px;
+    text-align: left;
+    margin-left: 98px;
+    max-width: 415px;
+    //padding-left: 98px;
+    //padding-right: 80px;
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 75px;
+  }
 }
 
 .intro__sub-title {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
   margin-bottom: 29px;
+
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 98px;
+    //padding-left: 98px;
+    //padding-right: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 75px;
+  }
 }
 
 .intro__image {
-  max-height: 270px;
-  max-width: 280px;
+  height: 270px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    order: 3;
+    height: 609px;
+    width: 709px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 30%;
+    top: 141px;
+    right: 331px;
+    height: 499px;
+    width: 552px;
   }
 }
 
 .intro__button {
-  align-items: flex-start;
-  width: 100%;
-
   @media (min-width: $tablet-width) {
     width: 244px;
   }
