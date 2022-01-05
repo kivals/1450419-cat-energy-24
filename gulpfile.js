@@ -32,7 +32,7 @@ const PATH = {
     js: SOURCE_DIR + '/js/*.js',
     images: SOURCE_DIR + '/img/**/*.{png,jpg}',
     svg: SOURCE_DIR + '/img/**/*.svg',
-    spriteSvg: SOURCE_DIR + '/img/icons/*.svg'
+    spriteSvg: SOURCE_DIR + '/img/icons/sprite/*.svg'
   }
 }
 
