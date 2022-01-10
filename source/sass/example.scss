@@ -1,4 +1,6 @@
 .example {
+  padding-top: 24px;
+  padding-bottom: 45px;
   background-color: #eaeaea;
 
   @media (min-width: $desktop-width) {
@@ -7,7 +9,11 @@
 }
 
 .example__content {
-  flex: 0 1 50%;
+  margin-bottom: 42px;
+}
+
+.example__title {
+  margin-bottom: 41px;
 }
 
 .example__animation {
@@ -16,11 +22,101 @@
 
 .example__text {
   font-family: "Arial", serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 18px;
+}
+
+.example__benefits {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__cost {
-  font-size: 20px;
+  font-size: 14px;
+  line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.example__animation {
+
+}
+
+.example__photos {
+  margin-bottom: 20px;
+}
+
+.example__photo-item {
+  &--before {
+    width: 280px;
+    height: 232px;
+  }
+
+  &--after {
+    width: 243px;
+    height: 232px;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+// TOGGLE //
+.example__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__toggle-label {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--before {
+
+  }
+
+  &--after {
+
+  }
+}
+
+.example__toggler {
+  position: relative;
+  min-width: 85px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  padding: 4px 6px;
+  margin: 0 20px;
+
+  &--before {
+    &::before {
+      transform: translate(0, 50%);
+    }
+  }
+
+  &--after {
+    &::before {
+      transform: translate(calc(100% - 8px), 50%);
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 50%;
+    background-color: #68b738;
+    border-radius: 6px;
+    height: 6px;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    transition: all 0.2s ease 0s;
+  }
 }

@@ -1,8 +1,30 @@
+.benefit {
+  position: relative;
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  width: 124px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
 .benefit__result {
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 .benefit__process {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(17px);
+  text-transform: lowercase;
+  display: inline-block;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 0 10px;
+  font-family: "Arial", serif;
+  font-size: 12px;
+  line-height: 12px;
   color: $special-dark-grey;
+  width: 77px;
 }
