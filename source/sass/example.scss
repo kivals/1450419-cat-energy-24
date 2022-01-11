@@ -11,6 +11,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    border-top: none;
+    padding-top: 23px;
+    padding-bottom: 70px;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 25%, #f2f2f2 25%, #f2f2f2);
+  }
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
     display: flex;
   }
 }
@@ -21,6 +30,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 194px;
+    margin-bottom: 0;
+  }
 }
 
 .example__title {
@@ -28,6 +42,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 146px;
   }
 }
 
@@ -43,6 +61,10 @@
     color: $special-dark-grey;
     margin-bottom: 54px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .example__content-wrapper {
@@ -50,12 +72,21 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .example__benefits {
   margin-bottom: 35px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    margin-bottom: 57px;
+  }
 }
 
 .example__benefit {
@@ -78,6 +109,17 @@
     max-width: 175px;
     text-align: right;
     margin-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+.example__cost-price {
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
   }
 }
 
@@ -148,6 +190,10 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -45px;
+  }
 }
 
 .example__photos {
@@ -210,6 +256,10 @@
   @media (min-width: $tablet-width) {
     justify-content: space-around;
     padding: 0 70px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 23px;
   }
 }
 

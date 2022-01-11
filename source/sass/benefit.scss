@@ -45,4 +45,8 @@
     width: auto;
     transform: translateY(50%);
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
