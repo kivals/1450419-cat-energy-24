@@ -6,27 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const exampleLabelBefore = document.querySelector('.example__toggle-label--before');
   const exampleLabelAfter = document.querySelector('.example__toggle-label--after');
-  const exampleImgBefore = document.querySelector('.example__photo-item--before');
-  const exampleImgAfter = document.querySelector('.example__photo-item--after');
-  const exampleToggler = document.querySelector('.example__toggler')
+  const exampleAnimationContainer = document.querySelector('.example__animation');
+
 
   exampleLabelBefore.addEventListener('click', () => {
-    if (!exampleImgAfter.classList.contains('hidden')) {
-      exampleImgAfter.classList.toggle('hidden');
-      exampleImgBefore.classList.toggle('hidden');
-
-      exampleToggler.classList.remove('example__toggler--after');
-      exampleToggler.classList.add('example__toggler--before');
+    if (!exampleAnimationContainer.classList.contains('example__animation--action-before')) {
+      exampleAnimationContainer.classList.add('example__animation--action-before');
+      exampleAnimationContainer.classList.remove('example__animation--action-after');
     }
   })
 
   exampleLabelAfter.addEventListener('click', () => {
-    if (!exampleImgBefore.classList.contains('hidden')) {
-      exampleImgBefore.classList.toggle('hidden');
-      exampleImgAfter.classList.toggle('hidden');
-
-      exampleToggler.classList.remove('example__toggler--before');
-      exampleToggler.classList.add('example__toggler--after');
+    if (!exampleAnimationContainer.classList.contains('example__animation--action-after')) {
+      exampleAnimationContainer.classList.add('example__animation--action-after');
+      exampleAnimationContainer.classList.remove('example__animation--action-before');
     }
   })
 });
