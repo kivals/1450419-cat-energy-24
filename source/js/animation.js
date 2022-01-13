@@ -1,9 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.header').classList.remove('header--nojs');
-
-  const menuBurger = document.querySelector('.header__toggle');
-  menuBurger.addEventListener('click', burgerClickHandler);
-
   const exampleLabelBefore = document.querySelector('.example__toggle-label--before');
   const exampleLabelAfter = document.querySelector('.example__toggle-label--after');
   const exampleAnimationContainer = document.querySelector('.example__animation');
@@ -24,7 +19,3 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 });
 
-function burgerClickHandler(e) {
-  this.classList.toggle('header__toggle--active');
-  document.querySelector('.header__nav').classList.toggle('header__nav--active');
-}

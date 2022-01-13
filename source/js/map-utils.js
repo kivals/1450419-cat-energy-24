@@ -1,4 +1,3 @@
-// Initialize and add the map
 function initMap() {
   const coordinates = { lat: 59.93872991775969, lng: 30.323048740133434 };
   const map = new google.maps.Map(document.querySelector(".map__google"), {
@@ -29,7 +28,5 @@ function initMap() {
     }
   });
 }
-
-console.log(screen.width)
 
 
