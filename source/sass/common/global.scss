@@ -50,6 +50,15 @@ a:hover {
   text-align: center;
   padding: 12px 0;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-color: $basic-green2;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
