@@ -1,0 +1,148 @@
+.products {
+}
+
+.products__list {
+
+}
+
+.products__item {
+  padding-top: 20px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.products__item-wrapper {
+  display: flex;
+  margin-bottom: 13px;
+  align-items: center;
+
+  //@media (min-width: $tablet-width) {
+  //  flex-direction: column;
+  //  align-items: center;
+  //  margin-bottom: 33px;
+  //}
+}
+
+.products__item-photo {
+  flex: 1 0 50%;
+  text-align: center;
+  //padding: 14px 0 12px;
+
+  //@media (min-width: $tablet-width) {
+  //  .catalog__item-img {
+  //    width: 168px;
+  //    margin-top: -50%;
+  //  }
+  //}
+}
+
+.products__item-content {
+  flex: 1 0 50%;
+  align-self: stretch;
+}
+
+.products__item-title {
+  max-width: 76px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+
+  //@media (min-width: $tablet-width) {
+  //  margin: 0 auto 20px;
+  //  font-size: 20px;
+  //  line-height: 24px;
+  //  color: $special-dark-grey2;
+  //  max-width: 132px;
+  //  text-align: center;
+  //}
+}
+
+.products__item-description {
+
+}
+
+.products__item-property {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 2px;
+  }
+
+  //@media (min-width: $tablet-width) {
+  //  padding-top: 5px;
+  //  padding-bottom: 9px;
+  //  border-bottom: 1px solid #cdcdcd;
+  //
+  //  .catalog__item-property-item {
+  //    font-size: 16px;
+  //  }
+  //}
+}
+
+.products__item-property-item {
+  font-family: "Arial", serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
+
+.products__button {
+  font-size: 16px;
+}
+
+//======= products__item-add ==========//
+
+.products__item-add {
+  padding-top: 25px;
+}
+
+.products__item-add-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.products__item-add-plus {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 23px;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    position: absolute;
+    top: calc(50% - 2px);
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+
+.products__item-add-title {
+  text-transform: uppercase;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.products__item-add-desc {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+  margin-bottom: 21px;
+}
+
+.products__item-add-button {
+
+}

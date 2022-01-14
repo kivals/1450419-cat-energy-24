@@ -60,6 +60,20 @@ a:hover {
     color: rgba(#ffffff, 0.3);
   }
 
+  &--light {
+    background-color: $basic-grey;
+    color: $special-dark-grey;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($special-dark-grey, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
