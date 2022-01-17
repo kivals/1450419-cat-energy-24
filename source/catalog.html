@@ -8,6 +8,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <script src="./js/map-utils.min.js"></script>
 </head>
 <body class="page-body">
   <header class="header container header--nojs">
@@ -348,32 +349,69 @@
 
     <section class="map">
       <h2 class="visually-hidden">Адрес на карте</h2>
-      <div class="map__cooperate">
-        <h2 class="map__cooperate-text">
-          приглашаем<br>к сотрудничеству<br>дилеров!
-        </h2>
-        <address class="map__cooperate-address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+      <div class="map__wrapper">
+        <div class="map__container container">
+          <div class="map__cooperate">
+            <h2 class="map__cooperate-text">
+              Приглашаем<br> к сотрудничеству дилеров!
+            </h2>
+            <address class="map__cooperate-address">
+              ул. Большая Конюшенная, д. 19/8 <span class="map__cooperate-address-city">Санкт-Петербург</span>
+            </address>
+          </div>
+        </div>
       </div>
       <div class="map__google"></div>
     </section>
   </main>
-  <footer class="footer container">
-    <a href="#" class="footer__brand">
-      <span>Cat</span> energy
-    </a>
-    <div class="footer__social">
-      <ul class="footer__social-list">
-        <li class="footer__social-item footer__social-item--vk">VK</li>
-        <li class="footer__social-item footer__social-item--instagram">instagram</li>
-        <li class="footer__social-item footer__social-item--facebook">FB</li>
-      </ul>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__brand">
+        <a href="#" class="footer__brand-link">
+          <svg width="128" height="24">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#">
+              <svg class="footer__icon footer__icon--vk" width="23" height="16">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">
+              <svg class="footer__icon footer__icon--instagram" width="16" height="16">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">
+              <svg class="footer__icon footer__icon--facebook" width="22" height="22">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__academy">
+        <a class="footer__academy-link" href="#">
+          <span class="footer__academy-link-text">HTML Academy</span>
+          <svg class="footer__academy-icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#academy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
-    <a href="#" class="footer__academy">
-      HTML Academy
-    </a>
   </footer>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7AeHSCLzEbkAD4FVXcYmhGuaFQU7wb_4&callback=initMap&libraries=&v=weekly&channel=2"
+    async
+  ></script>
   <script src="./js/menu.min.js"></script>
 </body>
 </html>
