@@ -24,60 +24,12 @@
 }
 
 .extra-catalog__title {
-  position: relative;
-  display: inline-block;
-  font-size: 24px;
-  padding-bottom: 36px;
-  padding-right: 22px;
-  background-color: #ffffff;
-
-  &::after,
-  &::before {
-    content: "";
-    height: 2px;
-    background-color: $basic-green;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
-
-  &::before {
-    display: none;
-    margin-top: calc(1em / 2 + 3px);
-  }
-
-  &::after {
-    margin-top: calc(1em / 2 + 3px);
-  }
-
-
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
     margin-bottom: 82px;
-    font-size: 36px;
-    border-bottom: none;
-    padding-left: 37px;
-    padding-right: 37px;
-
-    &::after,
-    &::before {
-      margin-top: calc(1em / 2 + 6px);
-    }
-
-    &::before {
-      display: block;
-      right: 100%;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
     margin-bottom: 80px;
-
-    &::before {
-      margin-right: 37px;
-    }
   }
 }
 
