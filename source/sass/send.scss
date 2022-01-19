@@ -1,6 +1,17 @@
 .send {
   border-top: 1px solid #d9d9d9;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.send__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 69px;
+    padding-right: 67px;
+  }
 }
 
 .send__title {
@@ -8,6 +19,10 @@
   padding-top: 25px;
   margin-bottom: 34px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+    margin-bottom: 55px;
+  }
 }
 
 .send__subtitle {
@@ -18,7 +33,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 }
 
@@ -67,7 +82,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 25px;
+      padding: 21px 25px 18px 30px;
       margin-bottom: 71px;
     }
   }
@@ -92,16 +107,21 @@
     margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 47px;
+
+      .send__form-title {
+        margin-bottom: 51px;
+      }
     }
   }
 }
 
 .send__form-row-wrapper {
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 55px;
+    row-gap: 18px;
   }
 }
 
@@ -135,7 +155,23 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex: 1 0 50%;
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+
+    &--radio {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+
+    &--checkbox {
+      margin-right: 15px;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -184,6 +220,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -196,6 +234,7 @@
     margin-bottom: 0;
     margin-right: 61px;
     flex: 0 1 282px;
+    font-size: 20px;
   }
 }
 
@@ -203,9 +242,23 @@
   font-size: 14px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.send__form-title {
+  @media (min-width: $tablet-width) {
+    margin-left: -37px;
+  }
 }
 
 .send__form-title-comment {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
 

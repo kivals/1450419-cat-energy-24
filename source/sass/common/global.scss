@@ -32,7 +32,14 @@ textarea {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 input[type="radio"],
@@ -100,8 +107,8 @@ a:hover {
   }
 }
 
-input,
-textarea {
+.input,
+.textarea {
   width: 100%;
   padding: 13px 15px 12px;
   font-size: 16px;
@@ -135,6 +142,7 @@ textarea {
     padding: 11px 20px;
     font-size: 20px;
     line-height: 30px;
+    height: 50px;
   }
 }
 
@@ -142,6 +150,14 @@ textarea {
   height: 150px;
   padding-right: 10px;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    height: 170px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 4px;
+    padding-left: 19px;
+  }
 }
 
 .label {
@@ -203,6 +219,20 @@ textarea {
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 18px;
+
+    &--radio::before,
+    &--checkbox::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--radio,
+    &--checkbox {
+      font-size: 20px;
+      line-height: 29px;
+      padding-left: 59px;
+    }
   }
 }
 
