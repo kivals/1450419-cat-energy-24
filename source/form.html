@@ -48,7 +48,7 @@
       <div class="send__container container">
         <h1 class="send__title section-title">Подбор программы</h1>
         <h3 class="send__subtitle">Заполните анкету, и мы подберем <br>программу питания для вашего кота</h3>
-        <form action="https://echo.htmlacademy.ru" method="post" class="send__form form-send">
+        <form action="https://echo.htmlacademy.ru" method="post" class="send__form">
           <section class="send__form-block send__form-block--cat-info">
             <h2 class="visually-hidden">Информация о коте</h2>
             <div class="send__form-row send__form-row--input">
@@ -82,19 +82,21 @@
           <section class="send__form-block send__form-block--host-contacts">
             <h2 class="separate-title send__form-title">Контактные данные
               <span class="send__form-title-comment">(владельца кота)</span></h2>
-            <div class="send__form-row send__form-row--input">
-              <label for="host-email" class="send__form-label label">E-mail:<em>*</em></label>
-              <input id="host-email" type="email" class="send__form-input input" placeholder="kuklachev@gmail.com" required>
-              <svg class="send__form-icon send__form-icon--email" width="17" height="13">
-                <use xlink:href="img/sprite.svg#email"></use>
-              </svg>
-            </div>
-            <div class="send__form-row send__form-row--input">
-              <label for="host-phone" class="send__form-label label">Телефон:<em>*</em></label>
-              <input id="host-phone" type="tel" class="send__form-input input" placeholder="8 (960) 900-60-90" required>
-              <svg class="send__form-icon send__form-icon--phone" width="20" height="20">
-                <use xlink:href="img/sprite.svg#phone"></use>
-              </svg>
+            <div class="send__form-contacts-wrapper">
+              <div class="send__form-row send__form-row--input">
+                <label for="host-email" class="send__form-label label">E-mail:<em>*</em></label>
+                <input id="host-email" type="email" class="send__form-input input" placeholder="kuklachev@gmail.com" required>
+                <svg class="send__form-icon send__form-icon--email" width="17" height="13">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="send__form-row send__form-row--input">
+                <label for="host-phone" class="send__form-label label">Телефон:<em>*</em></label>
+                <input id="host-phone" type="tel" class="send__form-input input" placeholder="8 (960) 900-60-90" required>
+                <svg class="send__form-icon send__form-icon--phone" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </div>
             </div>
           </section>
           <section class="send__form-block send__form-block--comment">
@@ -106,7 +108,7 @@
           </section>
           <section class="send__form-block send__form-block--extra">
             <h2 class="separate-title send__form-title">Дополнительно</h2>
-            <div class="send__form-row-wrapper">
+            <div class="send__form-extra-wrapper">
               <div class="send__form-row send__form-row--checkbox">
                 <input id="sweetener" class="send__form-checkbox checkbox" type="checkbox" name="extra-list" value="sweetener" checked="checked">
                 <label for="sweetener" class="send__form-label label--checkbox">Сахарозаменитель</label>
