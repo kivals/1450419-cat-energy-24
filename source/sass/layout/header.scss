@@ -118,6 +118,10 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  &--dark {
+    color: #000000;
+  }
 }
 
 .header__nav-item--active a {
