@@ -1,12 +1,15 @@
 .extra-catalog {
   padding-top: 25px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     padding-top: 68px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 76px;
+    margin-bottom: 17px;
   }
 }
 
@@ -164,11 +167,11 @@
     background-image: url("../img/catalog/extra-bg-mobile@2x.jpg");
   }
 
-  @media (min-resolution: 2dppx) and (min-width: $tablet-width){
+  @media (min-resolution: 2dppx) and (min-width: $tablet-width) {
     background-image: url("../img/catalog/extra-bg-tablet@2x.jpg");
   }
 
-  @media (min-resolution: 2dppx) and (min-width: $desktop-width){
+  @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
     background-image: url("../img/catalog/extra-bg-desktop@2x.jpg");
   }
 

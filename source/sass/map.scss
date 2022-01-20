@@ -1,5 +1,6 @@
 .map {
   position: relative;
+  background-color: $basic-grey;
 }
 
 .map__wrapper {
@@ -27,7 +28,6 @@
     padding: 61px 65px 59px 79px;
     width: 565px;
   }
-
 }
 
 .map__cooperate-text {

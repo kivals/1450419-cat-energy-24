@@ -1,6 +1,7 @@
 .intro {
   position: relative;
   background-image: url("../img/intro/intro-back-mobile.jpg");
+  background-color: $basic-green;
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -9,6 +10,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    background-color: transparent;
     background-image: none;
   }
 
@@ -113,7 +115,7 @@
 }
 
 .intro__wrapper-button {
-  background-color: white;
+  background-color: #ffffff;
   padding: 3px 20px 0;
   margin: 0 -20px;
 

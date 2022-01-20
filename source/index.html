@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -11,14 +13,13 @@
     <script src="./js/map-utils.min.js"></script>
   </head>
   <body class="page-body">
-
   <header class="header container header--nojs">
       <div class="header__wrapper">
         <a class="header__logo" href="/">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-            <img src="img/logo/logo-mobile.svg" alt="Функциональное питание для котов">
+            <img class="header__logo-image" width="34" height="38" src="img/logo/logo-mobile.svg" alt="Функциональное питание для котов">
           </picture>
         </a>
         <a class="header__logo header__logo--additional" href="/">
@@ -52,6 +53,9 @@
         <h2 class="intro__sub-title">Занялся собой? Займись котом!</h2>
         <div class="intro__wrapper-image">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/intro/can-desktop.webp, ./img/intro/can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/intro/can-tablet.webp, ./img/intro/can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/intro/can-mobile.webp, ./img/intro/can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="./img/intro/can-desktop.png 1x, ./img/intro/can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="./img/intro/can-tablet.png 1x, ./img/intro/can-tablet@2x.png 2x">
             <img class="intro__image" src="./img/intro/can-mobile.png" width="280" height="270" srcset="./img/intro/can-mobile@2x.png" alt="Cat energy">
@@ -156,7 +160,7 @@
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/example/before-tablet.webp, img/example/before-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/example/before-mobile.webp, img/example/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="./img/example/before-tablet.png 1x, ./img/example/before-tablet@2x.png 2x">
-                <img class="example__before-image" src="./img/example/before-mobile.png" srcset="./img/example/before-mobile@2x.png 2x" alt="Кот до похудения">
+                <img class="example__before-image" width="280" height="232" src="./img/example/before-mobile.png" srcset="./img/example/before-mobile@2x.png 2x" alt="Кот до похудения">
               </picture>
             </div>
             <div class="example__photo-item example__photo-item--after">
@@ -164,7 +168,7 @@
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/example/after-tablet.webp, img/example/after-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/example/after-mobile.webp, img/example/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="./img/example/after-tablet.png 1x, ./img/example/after-tablet@2x.png 2x">
-                <img class="example__before-image" src="./img/example/after-mobile.png" srcset="./img/example/after-mobile@2x.png 2x" alt="Кот до похудения">
+                <img class="example__after-image" width="243" height="232" src="./img/example/after-mobile.png" srcset="./img/example/after-mobile@2x.png 2x" alt="Кот до похудения">
               </picture>
             </div>
           </div>
