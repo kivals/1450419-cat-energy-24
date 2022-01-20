@@ -1,0 +1,107 @@
+.product {
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, transparent 16%, $basic-grey 16%);
+    padding: 8px 38px 39px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, transparent 16%, $basic-grey 16%);
+    padding: 8px 40px 43px;
+  }
+}
+
+.product__wrapper {
+  display: flex;
+  margin-bottom: 13px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+.product__photo {
+  position: relative;
+  width: 140px;
+  height: 112px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+  }
+}
+
+.product__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.product__content {
+  flex: 1 0 50%;
+  align-self: stretch;
+}
+
+.product__content-title {
+  max-width: 76px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $special-dark-grey2;
+    max-width: 132px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+    line-height: 21px;
+  }
+}
+
+.product__content-property {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #cdcdcd;
+
+    .product__content-property-item {
+      font-size: 16px;
+    }
+  }
+}
+
+.product__content-property-item {
+  font-family: "Arial", serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
+
+.product__button {
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 0;
+  }
+}

@@ -3,6 +3,7 @@ $fontFamily: "Oswald", "Arial", sans-serif;
 
 //<Используемые цвета>
 $basic-green: #68b738;
+$basic-green2: #5eaa2f;
 $basic-grey: #f2f2f2;
 $special-grey: #cdcdcd;
 $special-grey2: #666666;
@@ -12,6 +13,8 @@ $special-dark-grey2: #222222;
 // Viewports
 $tablet-width: 768px;
 $desktop-width: 1440px;
+$desktop-width2: 1440px - 1px;
+
 $mobile-width-only: 767px;
 
 $min-width: 320px;

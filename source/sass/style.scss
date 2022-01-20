@@ -3,6 +3,7 @@
 @import "common/fonts";
 @import "common/global";
 // UI blocks
+@import "ui/separate-title";
 @import "ui/section-title";
 @import "ui/visually-hidden";
 // Layout blocks
@@ -15,7 +16,10 @@
 @import "example";
 @import "map";
 @import "benefit";
+@import "catalog-title";
+//@import "products";
 @import "catalog";
-@import "extra";
+@import "product";
+@import "extra-catalog";
 @import "send";
 @import "cat-form";

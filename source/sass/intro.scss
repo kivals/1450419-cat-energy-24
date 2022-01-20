@@ -1,74 +1,137 @@
 .intro {
-  height: 302px;
-  background-image:
-    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/intro/intro-background-mobile.jpg");
-  background-position: top;
-  background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
-  display: flex;
-  flex-direction: column;
   position: relative;
-  align-items: center;
+  background-image: url("../img/intro/intro-back-mobile.jpg");
+  background-color: $basic-green;
+  background-repeat: no-repeat;
+  background-size: 100%;
 
   @media (min-resolution: 2dppx) {
-    background-image:
-      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/intro/intro-background-mobile@2x.jpg");
+    background-image: url("../img/intro/intro-back-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
+    background-color: transparent;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    height: 696px;
-    align-items: flex-start;
-
-    background-image:
-      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/intro/intro-background-desktop.jpg");
+    margin-top: -163px;
+    padding-top: 182px;
+    padding-bottom: 270px;
+    background-image: url("../img/intro/intro-back-desktop.jpg");
+    background-size: 50%;
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 50%;
 
     @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("../img/intro/intro-background-desktop@2x.jpg");
+      background-image: url("../img/intro/intro-back-desktop@2x.jpg");
     }
+  }
+}
+
+.intro__container {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }
 
 .intro__title {
   font-size: 36px;
   color: #ffffff;
-  margin-bottom: 25px;
   text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 41px;
+    text-align: left;
+    margin-left: 87px;
+    max-width: 415px;
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .intro__sub-title {
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
   margin-bottom: 29px;
+
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 53px;
+  }
 }
 
 .intro__image {
-  max-height: 270px;
-  max-width: 280px;
+  display: block;
+  margin: 0 auto;
+  height: 270px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    order: 3;
+    height: 609px;
+    width: 709px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 30%;
+    top: -42px;
+    right: 236px;
+    height: 499px;
+    width: 552px;
+  }
+}
+
+.intro__wrapper-image {
+  @media (min-width: $tablet-width) {
+    margin-top: -81px;
+    order: 4;
+  }
+}
+
+.intro__wrapper-button {
+  background-color: #ffffff;
+  padding: 3px 20px 0;
+  margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 0 0 90px;
+    position: relative;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 
 .intro__button {
-  align-items: flex-start;
-  width: 100%;
-
   @media (min-width: $tablet-width) {
     width: 244px;
   }

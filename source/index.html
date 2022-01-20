@@ -4,24 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
+    <script src="./js/map-utils.min.js"></script>
   </head>
   <body class="page-body">
-
   <header class="header container header--nojs">
       <div class="header__wrapper">
         <a class="header__logo" href="/">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-            <img src="./img/logo/logo-mobile.svg" alt="Функциональное питание для котов">
+            <img class="header__logo-image" width="34" height="38" src="img/logo/logo-mobile.svg" alt="Функциональное питание для котов">
           </picture>
         </a>
         <a class="header__logo header__logo--additional" href="/">
-          <img src="./img/logo/logo2-mobile.svg" width="101" height="18" alt="Функциональное питание для котов">
+          <img src="img/logo/logo2-mobile.svg" width="101" height="18" alt="Функциональное питание для котов">
         </a>
         <div class="header__toggle">
           <span class="header__toggle-line"></span>
@@ -30,31 +32,41 @@
         </div>
       </div>
 
-      <nav class="header__nav">
+      <nav class="header__nav header__nav--index">
         <ul class="header__nav-list">
-          <li class="header__nav-item header__nav-item--active">
-            <a class="header__nav-link" href="/">Главная</a>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="index.html">Главная</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="/catalog.html">Каталог продукции</a>
+            <a class="header__nav-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="/form.html">Подбор программы</a>
+            <a class="header__nav-link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
   <main class="main">
-    <section class="intro container">
-      <h1 class="intro__title">Функциональное питание для котов</h1>
-      <h2 class="intro__sub-title">Занялся собой? Займись котом!</h2>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./img/intro/can-desktop.png 1x, ./img/intro/can-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="./img/intro/can-tablet.png 1x, ./img/intro/can-tablet@2x.png 2x">
-        <img class="intro__image" src="./img/intro/can-mobile.png" width="280" height="270" srcset="./img/intro/can-mobile@2x.png" alt="Cat energy">
-      </picture>
-
-      <button type="button" class="button intro__button">Подобрать программу</button>
+    <section class="intro">
+      <div class="intro__container container">
+        <h1 class="intro__title">Функциональное питание для котов</h1>
+        <h2 class="intro__sub-title">Занялся собой? Займись котом!</h2>
+        <div class="intro__wrapper-image">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/intro/can-desktop.webp, ./img/intro/can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/intro/can-tablet.webp, ./img/intro/can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/intro/can-mobile.webp, ./img/intro/can-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="./img/intro/can-desktop.png 1x, ./img/intro/can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/intro/can-tablet.png 1x, ./img/intro/can-tablet@2x.png 2x">
+            <img class="intro__image" src="./img/intro/can-mobile.png" width="280" height="270" srcset="./img/intro/can-mobile@2x.png" alt="Cat energy">
+          </picture>
+        </div>
+        <div class="intro__wrapper-button">
+          <a href="form.html" class="button intro__button intro__wrapper-button-link">
+            Подобрать программу
+          </a>
+        </div>
+      </div>
     </section>
 
     <section class="services container">
@@ -64,109 +76,182 @@
           <div class="service__item-wrapper">
             <h3 class="services__title">Похудение</h3>
             <p class="services__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <button type="button" class="services__goto">Каталог SLIM</button>
+            <a href="catalog.html" class="services__link services__goto">
+              Каталог SLIM
+            </a>
           </div>
         </li>
         <li class="services__item services__item--pro">
           <div class="service__item__wrapper">
             <h3 class="services__title">Набор массы</h3>
             <p class="services__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <button type="button" class="services__goto">Каталог PRO</button>
+            <a href="catalog.html" class="services__link services__goto">
+              Каталог PRO
+            </a>
           </div>
         </li>
       </ul>
     </section>
 
     <section class="howto container">
-      <h2 class="section-title">Как это работает</h2>
+      <h2 class="howto__title section-title">Как это работает</h2>
       <ul class="howto__list">
-        <li class="howto__item howto__item--green">
-          <svg class="icon">
-            <use xlink:href="img/sprite.svg#leaf"></use>
-          </svg>
-          <p class="howto__text">Функциональное питание содержит только полезные питательные вещества.</p>
+        <li class="howto__item">
+          <div class="howto__background">1</div>
+          <div class="howto__item-wrapper">
+            <img class="howto__icon" src="./img/icons/leaf.svg" alt="Функциональное питание" width="61" height="60">
+            <p class="howto__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          </div>
         </li>
-        <li class="howto__item howto__item--powder">
-          <p class="howto__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+
+        <li class="howto__item">
+          <div class="howto__background">2</div>
+          <div class="howto__item-wrapper">
+            <img class="howto__icon" src="./img/icons/tub.svg" alt="в виде порошка" width="61" height="60">
+            <p class="howto__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </div>
         </li>
-        <li class="howto__item howto__item--food">
-          <svg class="eat">
-            <use xlink:href="img/sprite.svg#eat"></use>
-          </svg>
-          <p class="howto__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+
+        <li class="howto__item">
+          <div class="howto__background">3</div>
+          <div class="howto__item-wrapper">
+            <img class="howto__icon" src="./img/icons/eat.svg" alt="замена питания" width="61" height="60">
+            <p class="howto__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </div>
         </li>
-        <li class="howto__item howto__item--time">
-          <svg class="alarm">
-            <use xlink:href="img/sprite.svg#alarm"></use>
-          </svg>
-          <p class="howto__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+
+        <li class="howto__item">
+          <div class="howto__background">4</div>
+          <div class="howto__item-wrapper">
+            <img class="howto__icon" src="./img/icons/alarm.svg" alt="изменения через месяц" width="61" height="60">
+            <p class="howto__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </div>
         </li>
       </ul>
     </section>
 
-    <section class="example container">
-      <h3 class="visually-hidden">Живой пример</h3>
-      <div class="example__content">
-        <h2 class="section-title">Живой пример</h2>
-        <p class="example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="example__benefits">
-          <div class="benefit">
-            <div class="benefit__result">5 кг</div>
-            <div class="benefit__process">Снижение веса</div>
-          </div>
-          <div class="benefit">
-            <div class="benefit__result">60 дней</div>
-            <div class="benefit__process">Затрачено времени</div>
+    <section class="example">
+      <div class="example__container container">
+        <div class="example__content">
+          <h2 class="example__title section-title">Живой пример</h2>
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__content-wrapper">
+            <div class="example__benefits">
+              <div class="example__benefit benefit">
+                <div class="benefit__result">5 кг</div>
+                <div class="benefit__process">Снижение веса</div>
+              </div>
+              <div class="example__benefit benefit">
+                <div class="benefit__result">60 дней</div>
+                <div class="benefit__process">Затрачено времени</div>
+              </div>
+            </div>
+            <p class="example__cost">
+              Затраты на питание: <span class="example__cost-price">15 000 руб.</span>
+            </p>
           </div>
         </div>
-        <p class="example__cost">
-          Затраты на питание: <span>15 000 руб.</span>
-        </p>
-      </div>
-      <div class="example__animation">
-        <div class="example__photo">
-          <img src="https://via.placeholder.com/350" alt="Кот до похудения" class="example__before-image">
-          <img src="https://via.placeholder.com/350" alt="Кот после похудения" class="example__after-image">
-        </div>
-        <div class="example__toggle">
-          <span>Было</span>
-          <div class="example__toggler"></div>
-          <span>Стало</span>
+        <div class="example__animation">
+          <div class="example__photos">
+            <div class="example__photo-item example__photo-item--before">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/example/before-tablet.webp, img/example/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/example/before-mobile.webp, img/example/before-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/example/before-tablet.png 1x, ./img/example/before-tablet@2x.png 2x">
+                <img class="example__before-image" width="280" height="232" src="./img/example/before-mobile.png" srcset="./img/example/before-mobile@2x.png 2x" alt="Кот до похудения">
+              </picture>
+            </div>
+            <div class="example__photo-item example__photo-item--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/example/after-tablet.webp, img/example/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/example/after-mobile.webp, img/example/after-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/example/after-tablet.png 1x, ./img/example/after-tablet@2x.png 2x">
+                <img class="example__after-image" width="243" height="232" src="./img/example/after-mobile.png" srcset="./img/example/after-mobile@2x.png 2x" alt="Кот до похудения">
+              </picture>
+            </div>
+          </div>
+
+          <div class="example__toggle">
+            <span class="example__toggle-label example__toggle-label--before">Было</span>
+            <div class="example__toggler">
+              <button class="example__button">До/После</button>
+            </div>
+            <span class="example__toggle-label example__toggle-label--after">Стало</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Адрес на карте</h2>
-      <div class="map__cooperate">
-        <h2 class="map__cooperate-text">
-          приглашаем<br>к сотрудничеству<br>дилеров!
-        </h2>
-        <address class="map__cooperate-address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+      <div class="map__wrapper">
+        <div class="map__container container">
+          <div class="map__cooperate">
+            <h2 class="map__cooperate-text">
+              Приглашаем<br> к сотрудничеству дилеров!
+            </h2>
+            <address class="map__cooperate-address">
+              ул. Большая Конюшенная, д. 19/8 <span class="map__cooperate-address-city">Санкт-Петербург</span>
+            </address>
+          </div>
+        </div>
       </div>
       <div class="map__google"></div>
     </section>
   </main>
 
-  <footer class="footer container">
-    <a href="#" class="footer__brand">
-      <span>Cat</span> energy
-    </a>
-    <div class="footer__social">
-      <ul class="footer__social-list">
-        <li class="footer__social-item footer__social-item--vk">VK</li>
-        <li class="footer__social-item footer__social-item--instagram">instagram</li>
-        <li class="footer__social-item footer__social-item--facebook">FB</li>
-      </ul>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__brand">
+        <a href="#" class="footer__brand-link">
+          <svg width="128" height="24">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#">
+              <svg class="footer__icon footer__icon--vk" width="23" height="16">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">
+              <svg class="footer__icon footer__icon--instagram" width="16" height="16">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">
+              <svg class="footer__icon footer__icon--facebook" width="22" height="22">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__academy">
+        <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__academy-link-text">HTML Academy</span>
+          <svg class="footer__academy-icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#academy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
-    <a href="#" class="footer__academy">
-      HTML Academy
-    </a>
   </footer>
-  <script src="./js/script.min.js"></script>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7AeHSCLzEbkAD4FVXcYmhGuaFQU7wb_4&callback=initMap&libraries=&v=weekly&channel=2"
+    async
+  ></script>
+  <script src="./js/menu.min.js"></script>
+  <script src="./js/animation.min.js"></script>
   </body>
 </html>

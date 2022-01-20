@@ -1,8 +1,157 @@
 .footer {
   background-color: $basic-grey;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    padding: 58px 0;
+  }
+}
+
+.footer__container {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.footer__brand-link {
+  transition: opacity 0.2s ease 0s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 27px;
+  }
+}
+
+.footer__social-item {
+  &:not(:last-child) {
+    margin-right: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 23px;
+    }
+  }
+}
+
+.footer__academy {
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.footer__academy-link {
+  display: flex;
+  text-decoration: none;
+  color: $special-dark-grey;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    .footer__academy-icon {
+      fill: $basic-green;
+    }
+  }
+
+  &:active {
+    .footer__academy-link-text {
+      opacity: 0.3;
+    }
+
+    .footer__academy-icon {
+      fill: $basic-green;
+      opacity: 0.3;
+    }
+  }
+}
+
+.footer__academy-link-text {
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
+}
+
+.footer__academy-icon {
+  transition: all 0.2s ease 0s;
+  fill: $special-grey2;
+}
+
+.footer__icon {
+  transition: all 0.2s ease 0s;
+  fill: $special-grey2;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
+
+  &--vk {
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+  &--instagram {
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--facebook {
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 30px;
+    }
   }
 }

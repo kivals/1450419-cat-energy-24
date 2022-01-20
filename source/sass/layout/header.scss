@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -12,14 +13,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px 17px 26px;
   height: 65px;
 
   @media (min-width: $tablet-width) {
-    height: auto;
+    height: 100px;
     flex-grow: 1;
     flex-shrink: 0;
     justify-content: flex-start;
+    margin-right: 20px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 163px;
   }
 }
 
@@ -39,6 +45,18 @@
   }
 }
 
+.header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
 .header__nav {
   position: absolute;
   top: -100%;
@@ -51,7 +69,19 @@
     top: 65px;
   }
 
+  &--catalog,
+  &--form {
+    .header__nav-link {
+      color: #000000;
+    }
+
+    .header__nav-item--active::before {
+      background-color: #68b738;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    padding-top: 7px;
     position: static;
     display: flex;
     justify-content: flex-end;
@@ -64,16 +94,18 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    background-color: transparent;
   }
 }
 
 .header__nav-item {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   padding: 22px 10px;
   border-top: 1px solid #e6e6e6;
+  color: #000000;
 
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
@@ -84,13 +116,23 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-weight: 400;
+    padding: 10px 0;
     border: none;
+
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
   }
 }
 
 .header__nav-link {
-  color: #000000;
+  color: inherit;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -101,7 +143,7 @@
   }
 }
 
-.header__nav-item--active a {
+.header__nav-item--active {
   @media (min-width: $tablet-width) {
     position: relative;
 
@@ -113,6 +155,12 @@
       height: 2px;
       width: 100%;
       background-color: #68b738;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-color: #ffffff;
     }
   }
 }
