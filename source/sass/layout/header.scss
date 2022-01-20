@@ -57,6 +57,17 @@
     top: 65px;
   }
 
+  &--catalog,
+  &--form {
+    .header__nav-link {
+      color: #000000;
+    }
+
+    .header__nav-item--active::before {
+      background-color: #68b738;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 7px;
     position: static;
@@ -118,13 +129,9 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
-
-  &--dark {
-    color: #000000;
-  }
 }
 
-.header__nav-item--active a {
+.header__nav-item--active {
   @media (min-width: $tablet-width) {
     position: relative;
 
