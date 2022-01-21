@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   Array.from(routeLinks).forEach(link => {
     const linkUrl = new URL(link.href);
     if (linkUrl.pathname === document.location.pathname) {
-      link.classList.add('header__nav-item--active');
+      link.classList.add('header__nav-link--active');
     }
   })
 
