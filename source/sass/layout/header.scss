@@ -75,7 +75,7 @@
       color: #000000;
     }
 
-    .header__nav-item--active::before {
+    .header__nav-link--active::before {
       background-color: #68b738;
     }
   }
@@ -143,7 +143,7 @@
   }
 }
 
-.header__nav-item--active {
+.header__nav-link--active {
   @media (min-width: $tablet-width) {
     position: relative;
 

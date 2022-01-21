@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-ul li {
+ul {
   list-style: none;
 }
 
@@ -42,7 +42,7 @@ input[type="number"]:focus {
 }
 
 input[type="radio"],
-input[type="checkbox"], {
+input[type="checkbox"] {
   position: absolute;
   width: 1px;
   height: 1px;
